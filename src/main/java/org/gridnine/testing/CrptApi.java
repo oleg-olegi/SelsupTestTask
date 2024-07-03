@@ -91,6 +91,7 @@ public class CrptApi {
             public String uituCode;
         }
     }
+
     public static void main(String[] args) throws InterruptedException, IOException {
 
         CrptApi api = new CrptApi(TimeUnit.SECONDS, 10, true);
@@ -107,8 +108,8 @@ public class CrptApi {
         doc.producerInn = "producerInn";
         doc.productionDate = "2020-01-23";
         doc.productionType = "productionType";
-        doc.products = new CrptApi.Document.Product[1];
-        doc.products[0] = new CrptApi.Document.Product();
+        doc.products = new Document.Product[1];
+        doc.products[0] = new Document.Product();
         doc.products[0].certificateDocument = "certDoc";
         doc.products[0].certificateDocumentDate = "2020-01-23";
         doc.products[0].certificateDocumentNumber = "certDocNum";
